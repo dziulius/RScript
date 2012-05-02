@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+#
+
+require File.join(File.dirname(__FILE__), '../lib/rscript')
+
+RScript.parse("class Foo; end; class Bar < Foo; def abc; 123; end; end")
